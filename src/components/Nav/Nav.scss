@@ -1,0 +1,137 @@
+.nav {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    padding: 1%;
+    font-size: 0.9rem;
+    background: linear-gradient(to bottom, rgba(136, 5, 5, 0.6), rgba(0, 0, 0, 0));
+    transition: background-color .3s ease-in-out;
+}
+
+.nav_logo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 1%;
+    width: 40%;
+}
+
+.nav_links {
+    display: flex;
+    justify-content: flex-start;
+    margin: 2%;
+    margin-right: 2%;
+}
+.nav-linka {
+    margin: 2%;
+    margin-right: 2%;
+
+}
+
+.nav_link {
+    margin-right: 8%; 
+}
+
+.nav_actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 40%;
+    margin-top: 10px;
+}
+
+.nav--black {
+    background-color:black;
+}
+
+.nav-transparent_link {
+    transition: all 2.5s ease;
+    opacity: 0;
+    margin-right: 3%;
+}
+
+.nav-transparent_link-search {
+    transition: all 2.5s ease;
+    opacity: 0;
+    margin-right: 3%;
+    width: 120px;
+
+}
+
+
+.nav_burger {
+    padding: 1.3%;
+    width: 80px;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+}
+
+
+.nav_action_notif {
+    color: gold;
+    margin-right: 4%;
+}
+
+.nav_link_gift {
+    color: rgb(214, 78, 248);
+    margin-right: 4%;
+}
+
+::placeholder {
+    color:  rgba(25, 192, 245, 0.7) ;
+    font-size: 1.3em;
+}
+
+.loop_search_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav_link_films {
+    margin: 10%;
+    cursor: pointer;
+}
+
+.nav_link_series {
+    margin: 10%;
+}
+
+.nav_link_acceuil {
+    margin: 10%;
+}
+
+.button_submit {
+    width: 50px;
+    padding: 2%;     
+    margin-left: 3%;
+    cursor: pointer;
+    background: rgb(1, 160, 251);
+    border-style: none;
+    border-radius: 5px;
+    transition: all 2.5s ease;
+    opacity: 1;
+    margin-right: 5px;
+
+}
+
+
+.loop_search_container {
+    margin-right: 4%;
+    transition: 1.5s ease-in;
+}
+
+
+
+
+
+
+
+

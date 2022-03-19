@@ -1,0 +1,48 @@
+.footer {
+    background: linear-gradient(rgba(7, 0, 0, 0.8), rgba(248, 9, 9, 0.5));
+}   
+
+
+
+.footer__socials {
+    color: grey;
+    padding: 2rem 1rem;
+    font-size: 0.8rem;
+
+}
+
+.footer__link_facebook {
+    color: blue;
+}
+
+.footer__link_instagram {
+    background: linear-gradient(purple, yellow);
+    margin: 1%;
+    padding: 10px;
+    color: #2905A2;
+    border-radius: 5px;
+}
+
+.footer__link_youtube {
+    color: red;
+    
+}
+
+a.link {
+    text-decoration: none;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+.footer__link {
+    display: flex;
+    flex-wrap: row;
+    width: 100px;
+    padding: 1%;
+    text-decoration: none;
+}
