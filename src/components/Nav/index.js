@@ -1,8 +1,8 @@
 import React from 'react';
-import './Nav.scss';
+import './nav.scss';
 import { useState } from 'react';
 import MenuIcon from "@material-ui/icons/Menu";
-import  Form  from '../Form/Form';
+import  SearchBar  from '../SearchBar/index';
 import  LinkGift from '../Link/LinkGift';
 import  LinkNotif from '../Link/LinkNotif';
 import  LogoNetflix from '../Logo/LogoNetflix';
@@ -65,7 +65,7 @@ function Nav() {
         </div>
         <div className='nav_actions'>
             <Link name='ACCUEIL'/>
-            <Form />
+            <SearchBar />
             <LinkGift />
             <LinkNotif />
             <LinkAvatarIcon />

@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react';
-import './Form.scss';
+import './searchBar.scss';
 import { useState } from 'react';
 import SearchIcon from "@material-ui/icons/Search";
 import { SearchMoviesWithKeyWord } from '../../api/moviedb'
+import axios from 'axios';
+import { config } from '../../config';
 
 
 function Form() {
@@ -15,8 +17,10 @@ function Form() {
     const [movies, setMovies] = useState([]);
 
 
-    useEffect(()=>{
+    useEffect((e)=>{
+        console.log(e.target.value)
         setInputValue(e.target.value)
+        
         
         function SearchMoviesWithKeyWord(setInputValue) {
             axios.get(config.movie_api_url + 'search/movie?api_key=' + config.movie_api_key + '&query=' + setInputValue)
@@ -24,7 +28,7 @@ function Form() {
                 console.log(response.data.results)
                 setMovies(response.data)
                 setIsloaded(true)
-                return res.data;
+                return response.data;
             
             },
             (error) => {
@@ -67,7 +71,7 @@ function Form() {
         className='form_search'
         onSubmit={(e)=>{
             e.preventDefault();
-            onSubmitSearchMoviesWithKeyWord();
+            SearchMoviesWithKeyWord();
         }}
         >
             <div className='form_search_input'>

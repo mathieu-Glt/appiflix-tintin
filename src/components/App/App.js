@@ -1,6 +1,6 @@
 import './App.scss';
-import Nav from '../Nav/Nav';
-import Footer from '../Footer/Footer';
+import Nav from '../Nav/index';
+import Footer from '../Footer/index';
 import  PictureLogo from '../Picture/PictureLogo';
 
 function App() {
