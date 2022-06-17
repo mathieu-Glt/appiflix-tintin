@@ -17,33 +17,8 @@ function Form() {
     const [movies, setMovies] = useState([]);
 
 
-    useEffect((e)=>{
-        console.log(e.target.value)
-        setInputValue(e.target.value)
-        
-        
-        function SearchMoviesWithKeyWord(setInputValue) {
-            axios.get(config.movie_api_url + 'search/movie?api_key=' + config.movie_api_key + '&query=' + setInputValue)
-            .then((response)=>{
-                console.log(response.data.results)
-                setMovies(response.data)
-                setIsloaded(true)
-                return response.data;
-            
-            },
-            (error) => {
-                setError(error)
-            })
-        }
-        
-    }, []);
 
-    if(error) {
-        return <div>Erreur : {error.message}</div>
-    } else if (!isLoaded) {
-        return <div>Loading...</div>
-    }
-
+ 
 
     const searchClick = (e) => {
         e.preventDefault();
@@ -51,14 +26,6 @@ function Form() {
 
     };
 
-        /*const onSubmitSearchMoviesWithKeyWord = ()=> {
-            SearchMoviesWithKeyWord(inputValue)
-      
-               .then((response)=>{
-                    console.log(response)
-                    setMovies(response);
-                })
-            } */   
 
 
         
@@ -81,7 +48,6 @@ function Form() {
                //value={setInputValue}
                 onChange={(e)=>{
                     console.log(e.currentTarget.value)
-                    setInputValue(e.currentTarget.value)
                 }}
                 placeholder="Search" 
                 />

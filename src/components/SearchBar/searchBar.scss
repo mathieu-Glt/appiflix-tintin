@@ -1,21 +1,44 @@
 .nav-transparent_link {
-    transition: all 2.5s ease;
+    transition: all 1.5s ease;
     opacity: 0;
     margin-right: 3%;
+}
+.nav_action_link {
+    position: relative;
+    top: -25px;
+    margin-left: 200px;
+}
+.loop_search_container {
+    display: flex;
+    flex-direction: row;
 }
 
 
 .search_form {
-    transition: all 2.5s ease;
+    transition: all 1.5s ease;
     opacity: 1;
-    margin-right: 5px;
-    width: 100px;
+    width: 70px;
 }
 
 .form_search_input {
+    position: relative;
+    top: -25px;
     display: flex;
     flex-direction: row;
-    margin-right: 4%;
+    margin-right: 2%;
+    width: 100px;
+
+}
+
+.button_submit {
+    background-color: rgb(0, 128, 255);
+    color: black;
+    border-radius: 20px;
+    width: 50px;
+}
+
+a.nav_action_link {
+    color: rgb(250, 185, 5);
 }
 
 

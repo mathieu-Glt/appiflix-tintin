@@ -1,6 +1,6 @@
 import React from 'react';
 import './Logo.scss';
-import netflixYellow from '../../assets/images/netflixYellow.jpg';
+import netflixYellow from '../../assets/images/tintin.png';
 
 function LogoNetflix() {
 

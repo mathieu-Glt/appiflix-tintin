@@ -1,23 +1,28 @@
+*{
+  box-sizing: border-box;
+}
+
+
 .App {
   text-align: center;
 }
 body {
-  margin: 0;
   font-family: 'Roboto';
   -webkit-font-smoothing: antialiased;
   background-color: rgb(114, 45, 45);
 
 }
+.test{
+ height: 10vh;
+}
 
 *, ::before, ::after {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
   outline: none;
 }
 
 body {
-  margin: 0;
   font-family: 'Roboto', 'Oxygen'
 }
 

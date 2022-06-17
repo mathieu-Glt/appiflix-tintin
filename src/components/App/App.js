@@ -1,28 +1,40 @@
 import './App.scss';
 import Nav from '../Nav/index';
 import Footer from '../Footer/index';
-import  PictureLogo from '../Picture/PictureLogo';
+import PictureLogo from '../Picture/PictureLogo';
+import Banner from '../Banner/index';
+import Movies from '../movies/index';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Routes,
+  Route,
+  Redirect,
+} from "react-router-dom"
+
 
 function App() {
   return (
     <div className="App">
-      {/* navbar */}
-      <Nav />
+      <Router>
+        {/* navbar */}
+        <Nav />
+        <PictureLogo />
+        {/* banner */}
+        <Banner />
 
-      <div className='test'></div>
-      <PictureLogo />
-      
-      {/* banner */}
+        <div className='test'></div>
 
-      {/* rows */}
+        {/* movies */}
+        <Movies />
 
-      {/* video */}
+        {/* video */}
 
-      {/* quick view */}
+        {/* quick view */}
 
-      {/* footer */}
-      <Footer />
-      
+        {/* footer */}
+        <Footer />
+      </Router>
     </div>
   );
 }

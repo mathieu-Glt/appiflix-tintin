@@ -1,0 +1,92 @@
+.banner{
+    z-index: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80vw;
+    height: 120vh;
+    margin: 0 auto;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    padding-bottom: 3rem;
+    color: #ff7f50;
+    background-color: #dc143c;
+    @media screen and(min-width:768px) {
+        font-size: 1.2rem;
+        padding-bottom: 7rem;
+    }
+    &__content {
+        margin-top: 10px;
+        width: 60vw;
+        padding: 8vh 4% 0 4%;
+        @media screen and(min-width:768px) {
+            padding-top: 40vh;
+        }
+    
+        h1.banner__title {margin-top: 5px;
+            color: #ffbd08;
+            font-size: 1.5rem;
+            margin-left: 300px;
+        }
+        p.banner__paragraphe {
+            color: #522801;
+            font-size: 1.1rem;
+            margin-left: 300px;
+
+        }
+        div.image {
+            background-color: #fbd00f;
+            height: 54%;
+            width: 35%;
+            border-radius: 10px;
+            margin-left: 400px;
+        }
+        img.image_api {
+            align-items: center;
+        }
+        p.release_date {
+            margin-left: 350px;
+        }
+
+
+        div.banner__buttons {
+            display: flex;
+            margin-top: 20px;
+            margin-left: 450px;
+
+            .banner_button {
+                cursor: pointer;
+                display:flex;
+                align-items: center;
+                padding: 0.4rem 1rem 0.4rem 0.5rem;
+                margin-right: 0.7rem;
+                font-weight: 600;
+                color: black;
+                background-color: rgb(255, 115, 0);
+                border-radius: 5px;
+                &--play {
+                    background-color: rgba(31, 31, 31, 0.7);
+                }
+
+                .banner__paragraphe {
+                    color: #894026;
+                }
+                .image {
+                    background-color: #ff7f50;
+                }
+
+            }
+        }
+    }
+    &::after {
+        content:"";
+        display: block;
+        height: 3rem;
+        position: absolute;
+        bottom: 0;
+        background: linear-gradient(180deg, rgba(243, 36, 0, 0.7) rgba(31, 31, 31, 0.7) #bd5a0e) ;
+    }
+
+
+}

@@ -2,10 +2,10 @@ import React from 'react';
 import './Link.scss';
 
 
-function Link(props) {
+function LinkHerge(props) {
 
     return (
-        <a href="/" className='nav_link'>
+        <a href="/" className='nav_linkHerge'>
             {props.name}
         </a>
 
@@ -13,4 +13,4 @@ function Link(props) {
 
 }
 
-export default Link;
+export default LinkHerge;

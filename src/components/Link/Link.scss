@@ -1,12 +1,10 @@
-.nav_link {
-    margin-right: 8%; 
-}
+
 
 
 a {
     color: rgb(7, 154, 251);
     text-decoration: none; 
-    padding: 0.5%;
+    padding: 4%;
 }
 
 
@@ -14,3 +12,40 @@ a {
     border-radius: 50%;
     width: 30px;
 }
+a.nav_link_gift {
+    color: rgb(30, 40, 133);
+}
+
+a.nav_action_notif {
+    color: rgb(250, 185, 5);
+}
+
+a.nav_linkTrendies {
+    color: rgb(243, 10, 10);
+}
+
+a.nav_linkHerge {
+    color: rgb(254, 64, 17);
+}
+
+a.nav_linkTintin {
+    color: rgb(244, 95, 15);
+}
+
+a.nav_linkSeries {
+    color: rgb(235, 133, 37);
+}
+
+a.nav_linkFavories {
+    color: rgb(238, 161, 36);
+}
+
+a.nav_linkAcceuil {
+    color: rgb(244, 188, 47);
+}
+
+
+
+
+
+
