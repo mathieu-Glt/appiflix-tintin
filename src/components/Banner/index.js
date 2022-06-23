@@ -35,21 +35,23 @@ function Banner() {
 
     return (
         <div className="banner">
-            <div className="banner__content">
-                <h1 className="banner__title">
-                    {movieApi.title}
-                </h1>
-                <div className="image">
+            <h1 className="banner__title">
+                {movieApi.title}
+            </h1>
+
+            <div className="banner__content d-flex flex-row  w-100 ms-1">
+                <div className="image w-40 ms-1">
                     <img className="image_api" src={requests.base_url_img + movieApi.poster_path} />
                 </div>
-                <p className="banner__paragraphe">
+                <div>
+                <p className="banner__paragraphe w-60">
                     {movieApi.overview}
-                </p>
-                <p className="release_date">
                     {movieApi.release_date}
                 </p>
 
-                <div className="banner__buttons">
+                </div>
+
+                <div className="banner__buttons ms-1">
                     <button className="banner_button">
                         <PlayCircleIcon />Lecture</button>
                     <button className="banner_button">

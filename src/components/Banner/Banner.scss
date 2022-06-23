@@ -1,38 +1,33 @@
 .banner{
     z-index: 0;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     width: 80vw;
-    height: 120vh;
     margin: 0 auto;
     border-radius: 10px;
-    font-size: 0.9rem;
-    padding-bottom: 3rem;
-    color: #ff7f50;
+    color: #fbb621;
+    font-family: cursive;
     background-color: #dc143c;
     @media screen and(min-width:768px) {
         font-size: 1.2rem;
         padding-bottom: 7rem;
     }
     &__content {
-        margin-top: 10px;
-        width: 60vw;
+        margin-top: 0px;
         padding: 8vh 4% 0 4%;
         @media screen and(min-width:768px) {
             padding-top: 40vh;
         }
     
-        h1.banner__title {margin-top: 5px;
-            color: #ffbd08;
-            font-size: 1.5rem;
-            margin-left: 300px;
+        h1.banner__title {
+            position: absolute;
+            margin-left: 500px;
+            color: #ff4608;
+            font-size: 1.1rem;
         }
         p.banner__paragraphe {
-            color: #522801;
-            font-size: 1.1rem;
-            margin-left: 300px;
+            color: black;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
         }
         div.image {
@@ -58,10 +53,12 @@
             .banner_button {
                 cursor: pointer;
                 display:flex;
+                flex-direction: column;
                 align-items: center;
-                padding: 0.4rem 1rem 0.4rem 0.5rem;
+                padding: 10px;
+                width: 80px;
+                height: 90px;
                 margin-right: 0.7rem;
-                font-weight: 600;
                 color: black;
                 background-color: rgb(255, 115, 0);
                 border-radius: 5px;

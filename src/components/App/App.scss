@@ -5,11 +5,14 @@
 
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 body {
   font-family: 'Roboto';
   -webkit-font-smoothing: antialiased;
   background-color: rgb(114, 45, 45);
+  width: 100%;
 
 }
 .test{
