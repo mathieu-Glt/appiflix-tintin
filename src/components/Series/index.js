@@ -4,7 +4,7 @@ import React from "react";
 function Series() {
     return(
         <div>
-            <h1>TOUS LES SERIES DE TINTIN</h1>
+            <h1>TOUTE LA SERIE DE TINTIN</h1>
         </div>
     );
 };

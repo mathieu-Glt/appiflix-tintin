@@ -8,7 +8,9 @@ const requests = {
     fetchTrending: `${BASE_URL}/trending/movie/week?api_key=${API_Key}`,
     fetchTopRated: `${BASE_URL}/movie/top_rated?api_key=${API_Key}`,
     fetchAllTintinApi: `${BASE_URL}/search/movie?api_key=${API_Key}&language=fr&query=tintin`,
-    fetchAllTintinDatabase: `${api_url}/api/tintins`
+    fetchAllTintinDatabase: `${api_url}/api/tintins`,
+    fetchAllHergeDatabase: `${api_url}/api/herges`,
+    fetchAllPersoDatabase: `${api_url}/api/personnages`
 }
 
 export default requests;

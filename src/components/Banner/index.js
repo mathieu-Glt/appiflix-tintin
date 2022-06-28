@@ -28,7 +28,7 @@ function Banner() {
         fetchDataApi();
     }, []);
 
-    //console.log(movieApi);
+    console.log(movieApi);
 
 
 

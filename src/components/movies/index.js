@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component }from "react";
 import "./movies.scss";
 import { useState, useEffect } from "react";
 import requests from "../../configApi/Request";
@@ -34,7 +34,7 @@ function Movies() {
 
 
     return (
-        <div className="movies_container  ">
+        <div className="movies_container">
             <h1 className="banner__title pt-5 text-warning">
                 Toute la série des aventures de Tintin
             </h1>

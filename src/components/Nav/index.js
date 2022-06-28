@@ -8,13 +8,21 @@ import LinkNotif from '../Link/LinkNotif';
 import LogoNetflix from '../Logo/LogoNetflix';
 import PictureLogo from '../Picture/PictureLogo';
 import LinkAvatarIcon from '../Link/LinkAvatarIcon';
-import Link from '../Link/LinkAcceuil';
 import LinkAcceuil from '../Link/LinkAcceuil';
 import LinkFavories from '../Link/LinkFavories';
 import LinkSeries from '../Link/LinkSeries';
 import LinkTintin from '../Link/LinkTintin';
 import LinkHerge from '../Link/LinkHerge';
 import LinkTrendies from '../Link/LinkTrendies';
+import {
+    BrowserRouter as Router,
+    Routes,
+    Switch,
+    Route,
+    Redirect,
+    Link,
+} from "react-router-dom"
+import { color } from '@mui/system';
 
 
 
@@ -52,6 +60,36 @@ function Nav() {
         toggleMenu ? setToggleMenu(false) : setToggleMenu(true);
     };
 
+    const colorRgbAcceuil = {
+        color: "244, 188, 47"
+    };
+
+    const colorRgbFavories = {
+        color: "238, 161, 36"
+    };
+
+    const colorRgbSeries = {
+        color: "235, 133, 37"
+    };
+
+    const colorRgbTintin = {
+        color: "244, 95, 15"
+    };
+
+    const colorRgbHerge = {
+        color: "254, 64, 17"
+    };
+
+    const colorRgbTrendies = {
+        color: "243, 10, 10"
+    };
+
+
+
+
+
+    
+
 
     return (
         <div className='container'>
@@ -74,12 +112,12 @@ function Nav() {
 
                 <nav>
                     <div className='nav_linka'>
-                        <LinkAcceuil name='ACCUEIL' />
-                        <LinkFavories name='FAVORIES' />
-                        <LinkSeries name='SERIES' />
-                        <LinkTintin name='TINTIN' />
-                        <LinkHerge name='HERGE' />
-                        <LinkTrendies name='TRENDIES' />
+                        <Link style={{ color: `rgb(${colorRgbAcceuil.color})` }} to="/acceuil">ACCEUIL</Link>
+                        <Link  style={{ color: `rgb(${colorRgbFavories.color})` }} to="/favories">FAVORIES</Link>
+                        <Link style={{ color: `rgb(${colorRgbSeries.color})` }} to="/series">SERIES</Link>
+                        <Link  style={{ color: `rgb(${colorRgbTintin.color})` }} to="/tintin">TINTIN</Link>
+                        <Link  style={{ color: `rgb(${colorRgbHerge.color})` }} to="/herge">HERGE</Link>
+                        <Link  style={{ color: `rgb(${colorRgbTrendies.color})` }} to="/trendies">TRENDIES</Link>
 
 
                     </div>
