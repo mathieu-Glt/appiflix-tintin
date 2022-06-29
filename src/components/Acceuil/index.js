@@ -23,7 +23,7 @@ function Acceuil() {
 
     return(
         <div>
-            <h1>TOUS LES FILMS TINTIN</h1>
+            <h1 className="bg-dark text-primary">TOUS LES FILMS TINTIN</h1>
             <section className="card_movie d-flex flex-row flex-wrap justify-content-center p-4 pt-4">
                 {movieDatabase.map((movieDatabase, index) => (
                     <div className="movie_container p-4 card text-bg-dark mb-3 d-flex flex-column m-4 w-25 justify-content-center" key={index}>

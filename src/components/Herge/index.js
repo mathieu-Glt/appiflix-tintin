@@ -26,7 +26,7 @@ function Herge() {
 
     return(
         <div className="herge_container">
-            <h1 banner__title pt-5 text-warning>
+            <h1 className="bg-dark text-info">
                 L'HISTOIRE DE HERGE
             </h1>
             <section className="card_movie d-flex flex-row flex-wrap justify-content-center p-4 pt-4">
@@ -57,10 +57,18 @@ function Herge() {
                         <p className="movies__synopsis card-text  pt-4">
                             {hergeDatabase.presentation}
                         </p>
+                        <div className="imageHerge" key={index}>
+                            <img className="image_herge" src={process.env.PUBLIC_URL + 'serie/tintin-tchang.jpg' } />
+                        </div>
+
                         <h3 className="pt-5">La création des aventures de Tintin:</h3>
                         <p className="movies__synopsis card-text  pt-4">
                             {hergeDatabase.aventures_de_tintin}
                         </p>
+                        <div className="imageHerge" key={index}>
+                            <img className="image_herge" src={process.env.PUBLIC_URL + 'serie/tintin-smile.jpg' } />
+                        </div>
+
 
 
 

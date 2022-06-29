@@ -29,9 +29,8 @@ function Tintin() {
 
     return (
         <div className="herge_container">
-            <h1 banner__title pt-5 text-warning>
+            <h1 className="bg-dark text-danger">
                 LE PERSONNAGE TINTIN
-
             </h1>
 
             <section className="card_movie d-flex flex-row flex-wrap justify-content-center p-4 pt-4">
@@ -50,6 +49,11 @@ function Tintin() {
                         <p className="movies__synopsis card-text pt-4">
                             {persoDatabase.suite}
                         </p>
+                        <div className="imageHerge" key={index}>
+                            <img className="image_herge" src={process.env.PUBLIC_URL + 'serie/tintin-general.jpg' } />
+                        </div>
+
+
                         <p className="movies__synopsis card-text pt-4">
                             {persoDatabase.age}
                         </p>
@@ -60,9 +64,17 @@ function Tintin() {
                         <p className="movies__synopsis card-text pt-4">
                             {persoDatabase.personnalité}
                         </p>
+                        <div className="imageHerge" key={index}>
+                            <img className="image_herge" src={process.env.PUBLIC_URL + 'serie/tintin-haddock.jpg' } />
+                        </div>
+
                         <p className="movies__synopsis card-text pt-4">
                             {persoDatabase.personnalité_suite}
                         </p>
+                        <div className="imageHerge" key={index}>
+                            <img className="image_herge" src={process.env.PUBLIC_URL + 'serie/tintin-motobike.jpg' } />
+                        </div>
+
 
 
 

@@ -10,7 +10,8 @@ const requests = {
     fetchAllTintinApi: `${BASE_URL}/search/movie?api_key=${API_Key}&language=fr&query=tintin`,
     fetchAllTintinDatabase: `${api_url}/api/tintins`,
     fetchAllHergeDatabase: `${api_url}/api/herges`,
-    fetchAllPersoDatabase: `${api_url}/api/personnages`
+    fetchAllPersoDatabase: `${api_url}/api/personnages`,
+    fetchAllCharactersDatabase: `${api_url}/api/series`
 }
 
 export default requests;

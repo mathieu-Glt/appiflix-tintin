@@ -114,10 +114,10 @@ function Nav() {
                     <div className='nav_linka'>
                         <Link style={{ color: `rgb(${colorRgbAcceuil.color})` }} to="/acceuil">ACCEUIL</Link>
                         <Link  style={{ color: `rgb(${colorRgbFavories.color})` }} to="/favories">FAVORIES</Link>
-                        <Link style={{ color: `rgb(${colorRgbSeries.color})` }} to="/series">SERIES</Link>
+                        <Link style={{ color: `rgb(${colorRgbSeries.color})` }} to="/series">PERSONNAGE SERIES</Link>
                         <Link  style={{ color: `rgb(${colorRgbTintin.color})` }} to="/tintin">TINTIN</Link>
                         <Link  style={{ color: `rgb(${colorRgbHerge.color})` }} to="/herge">HERGE</Link>
-                        <Link  style={{ color: `rgb(${colorRgbTrendies.color})` }} to="/trendies">TRENDIES</Link>
+                        <Link  style={{ color: `rgb(${colorRgbTrendies.color})` }} to="/trendies">TOP RATED</Link>
 
 
                     </div>
