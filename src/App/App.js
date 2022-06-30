@@ -1,16 +1,16 @@
 import './App.scss';
-import Nav from '../Nav/index';
-import Footer from '../Footer/index';
-import PictureLogo from '../Picture/PictureLogo';
-import Banner from '../Banner/index';
-import Movies from '../movies/index';
-import Acceuil from '../Acceuil/index';
-import Favories from '../Favories/index';
-import Series from '../Series/index';
-import Tintin from '../Tintin/index';
-import Herge from '../Herge/index';
+import Nav from '../components/Nav/index';
+import Footer from '../components/Footer/index';
+import PictureLogo from '../components/Picture/PictureLogo';
+import Banner from '../components/Banner/index';
+import Movies from '../components/movies/index';
+import Acceuil from '../components/Acceuil/index';
+import Favories from '../components/Favories/index';
+import Series from '../components/Series/index';
+import Tintin from '../components/Tintin/index';
+import Herge from '../components/Herge/index';
 import { useState, useEffect } from "react";
-import requests from "../../configApi/Request";
+import requests from "../configApi/Request";
 import axios from "axios";
 import {
   BrowserRouter as Router,
@@ -19,6 +19,8 @@ import {
   Route,
   Redirect,
 } from "react-router-dom"
+import RateStar from '../components/RateStar';
+import TopRated from '../components/TopRated';
 
 
 function App() {
@@ -58,7 +60,7 @@ function App() {
           {/* banner */}
           <Banner />
         </div>
-
+        <RateStar />
         <div className='movies'>
           {/* movies */}
 
@@ -72,6 +74,8 @@ function App() {
           <Route path="/series" element={<Series />} />
           <Route path="/tintin" element={<Tintin />} />
           <Route path="/herge" element={<Herge />} />
+          <Route path="/toprated" element={<TopRated />} />
+
 
 
 

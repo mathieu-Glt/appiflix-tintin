@@ -11,7 +11,8 @@ const requests = {
     fetchAllTintinDatabase: `${api_url}/api/tintins`,
     fetchAllHergeDatabase: `${api_url}/api/herges`,
     fetchAllPersoDatabase: `${api_url}/api/personnages`,
-    fetchAllCharactersDatabase: `${api_url}/api/series`
+    fetchAllCharactersDatabase: `${api_url}/api/series`,
+    fetchAllMoviesRating: `${api_url}/api/tintins/rating`
 }
 
 export default requests;

@@ -85,10 +85,18 @@ function Nav() {
     };
 
 
+    const styles = {
+        containerSearch: {
+            marginLeft: "400px"
+        }
+    }
 
 
 
-    
+
+
+
+
 
 
     return (
@@ -113,16 +121,18 @@ function Nav() {
                 <nav>
                     <div className='nav_linka'>
                         <Link style={{ color: `rgb(${colorRgbAcceuil.color})` }} to="/acceuil">ACCEUIL</Link>
-                        <Link  style={{ color: `rgb(${colorRgbFavories.color})` }} to="/favories">FAVORIES</Link>
+                        <Link style={{ color: `rgb(${colorRgbFavories.color})` }} to="/favories">FAVORIES</Link>
                         <Link style={{ color: `rgb(${colorRgbSeries.color})` }} to="/series">PERSONNAGE SERIES</Link>
-                        <Link  style={{ color: `rgb(${colorRgbTintin.color})` }} to="/tintin">TINTIN</Link>
-                        <Link  style={{ color: `rgb(${colorRgbHerge.color})` }} to="/herge">HERGE</Link>
-                        <Link  style={{ color: `rgb(${colorRgbTrendies.color})` }} to="/trendies">TOP RATED</Link>
+                        <Link style={{ color: `rgb(${colorRgbTintin.color})` }} to="/tintin">TINTIN</Link>
+                        <Link style={{ color: `rgb(${colorRgbHerge.color})` }} to="/herge">HERGE</Link>
+                        <Link style={{ color: `rgb(${colorRgbTrendies.color})` }} to="/toprated">TOP RATED</Link>
 
 
                     </div>
-                    <div className='nav_actions'>
-                        <SearchBar />
+                    <div className='nav_actions  d-flex flex-row justify-content-around'>
+                        <div style={styles.containerSearch}>
+                            <SearchBar />
+                        </div>
                         <LinkGift />
                         <LinkNotif />
                         <LinkAvatarIcon />

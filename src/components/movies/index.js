@@ -1,9 +1,11 @@
-import React, { Component }from "react";
+import React, { Component } from "react";
 import "./movies.scss";
 import { useState, useEffect } from "react";
 import requests from "../../configApi/Request";
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 import axios from "axios";
+import RateStar from "../RateStar";
+
 
 
 function Movies() {
@@ -41,6 +43,10 @@ function Movies() {
 
 
             <section className="card_movie d-flex flex-row flex-wrap justify-content-center p-4 pt-4">
+                <div className="d-flex flex-row">
+                    <RateStar />
+                </div>
+
                 {movieDatabase.map((movieDatabase, index) => (
                     <div className="movie_container p-4 card text-bg-dark mb-3 d-flex flex-column m-4 w-25 justify-content-center" key={index}>
                         <div className="image ">
@@ -51,14 +57,24 @@ function Movies() {
                         <p className="movies__synopsis card-text pt-4">
                             {movieDatabase.synopsis}
                         </p>
+
                         <div className="movies__buttons p-2 ">
                             <button className="banner_button btn-sm">
-                                <PlayCircleIcon />Lecture</button>
+                                <PlayCircleIcon />Lecture
+                            </button>
+                            <button className="banner_button btn-sm">
+                                Ajouter
+                            </button>
+                            <button className="banner_button btn-sm">
+                                Supprimer
+                            </button>
+
 
                         </div>
                     </div>
 
                 ))}
+
             </section>
         </div>
     )
