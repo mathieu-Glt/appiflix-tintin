@@ -80,9 +80,14 @@ function Nav() {
         color: "254, 64, 17"
     };
 
-    const colorRgbTrendies = {
+    const colorRgbToprated = {
         color: "243, 10, 10"
     };
+
+    const colorRgbToLog = {
+        color: "34, 131, 233"
+    };
+
 
 
     const styles = {
@@ -125,7 +130,8 @@ function Nav() {
                         <Link style={{ color: `rgb(${colorRgbSeries.color})` }} to="/series">PERSONNAGE SERIES</Link>
                         <Link style={{ color: `rgb(${colorRgbTintin.color})` }} to="/tintin">TINTIN</Link>
                         <Link style={{ color: `rgb(${colorRgbHerge.color})` }} to="/herge">HERGE</Link>
-                        <Link style={{ color: `rgb(${colorRgbTrendies.color})` }} to="/toprated">TOP RATED</Link>
+                        <Link style={{ color: `rgb(${colorRgbToprated.color})` }} to="/toprated">TOP RATED</Link>
+                        <Link style={{ color: `rgb(${colorRgbToLog.color})` }} to="/login">TO LOGIN</Link>
 
 
                     </div>

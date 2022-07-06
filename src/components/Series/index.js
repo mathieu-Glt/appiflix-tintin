@@ -73,7 +73,7 @@ function Series() {
                             Profession: {characterDatabase.profession}
                         </p>
                         <p className="movies__synopsis card-text ">
-                            Personnage: {characterDatabase.personnage}
+                            Personnage: {characterDatabase.personnage.slice(0, 150)}...
                         </p>
                         <p className="movies__synopsis card-text">
                             Personnage: {characterDatabase.personnage_suite}

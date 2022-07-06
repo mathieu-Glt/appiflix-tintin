@@ -21,6 +21,11 @@ import {
 } from "react-router-dom"
 import RateStar from '../components/RateStar';
 import TopRated from '../components/TopRated';
+import Form from '../components/Login/form';
+import { Login } from '@mui/icons-material';
+
+import RequireDataAuth from '../helperForm/form-validator';
+
 
 
 function App() {
@@ -75,6 +80,8 @@ function App() {
           <Route path="/tintin" element={<Tintin />} />
           <Route path="/herge" element={<Herge />} />
           <Route path="/toprated" element={<TopRated />} />
+          <Route path="/login" element={ <Login />}  />
+
 
 
 

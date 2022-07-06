@@ -4,6 +4,7 @@ const URL_img = "https://image.tmdb.org/t/p/w185";
 const api_url = "http://localhost:8080"
 
 const requests = {
+    api_url: "http://localhost:8080",
     base_url_img: `${URL_img}`,
     fetchTrending: `${BASE_URL}/trending/movie/week?api_key=${API_Key}`,
     fetchTopRated: `${BASE_URL}/movie/top_rated?api_key=${API_Key}`,
